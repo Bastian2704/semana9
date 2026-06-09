@@ -25,7 +25,7 @@ class LibroTest {
         assertFalse(libro.estaDisponible());
     }
 
-  	/**
+ 
     @Test
     void deberiaLanzarErrorAlPrestarLibroNoDisponible() {
         Libro libro = new Libro("1984", "George Orwell");
@@ -33,17 +33,17 @@ class LibroTest {
 
         assertThrows(IllegalStateException.class, libro::prestar);
     }
-  	**/
+
   
-	/**
     @Test
     void deberiaDevolverLibroPrestado() {
         Libro libro = new Libro("1984", "George Orwell");
-
+        
         libro.prestar();
         libro.devolver();
-
+        
         assertTrue(libro.estaDisponible());
-    }
-  	**/
+        }
+        /**
+        **/
 }
