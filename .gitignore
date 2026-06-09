@@ -1,6 +1,9 @@
 # Compiled class file
 *.class
 
+# Maven/Gradle build output
+target/
+
 # Log file
 *.log
 
